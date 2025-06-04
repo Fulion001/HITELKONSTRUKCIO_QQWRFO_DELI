@@ -4,7 +4,7 @@ document.getElementById("loanForm").addEventListener("submit", async (e) => {
   const amount = parseFloat(document.getElementById("loanAmount").value);
   const rate = parseFloat(document.getElementById("interestRate").value);
 
-  const response = await fetch("https://localhost:5001/api/loan/offers", {
+  const response = await fetch("http://localhost:5168/api/loan/offers", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ loanAmount: amount, interestRate: rate })

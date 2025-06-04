@@ -20,4 +20,10 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCors(x => x
+                .AllowCredentials()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .WithOrigins("http://localhost:5500"));
+
 app.Run();
