@@ -1,6 +1,11 @@
 body {
-  background-color: #121212;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   color: #f8f9fa;
+  padding-top: 80px;
 }
 
 .card.green {
@@ -21,4 +26,30 @@ body {
 .card {
   border: none;
   border-radius: 0.75rem;
+}
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.7); /* sötét áttetsző háttér a tartalomnak */
+  border-radius: 12px;
+  padding: 2rem;
+  padding-top: 80px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-style: italic;
+  text-align: center;
+}
+h3 {
+  margin-top: 80px; /* vagy amennyi neked kell */
+}
+#hitel{
+    margin-top: 80px;
+}
+#carouselExample{
+    margin-top: 40px;
 }
