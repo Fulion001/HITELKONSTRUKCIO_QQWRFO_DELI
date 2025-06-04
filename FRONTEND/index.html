@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Hitelkalkulátor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container my-5">
+    <h1 class="mb-4">Hitelkalkulátor</h1>
+
+    <!-- Űrlap -->
+    <form id="loanForm" class="row g-3 mb-4">
+      <div class="col-md-6">
+        <label for="loanAmount" class="form-label">Hitelösszeg (Ft)</label>
+        <input type="number" class="form-control" id="loanAmount" required>
+      </div>
+      <div class="col-md-6">
+        <label for="interestRate" class="form-label">Kamatláb (%)</label>
+        <input type="number" step="0.01" class="form-control" id="interestRate" required>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Ajánlatok lekérése</button>
+      </div>
+    </form>
+
+    <!-- Eredmények -->
+    <div id="offersContainer" class="row g-3"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
