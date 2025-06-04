@@ -1,0 +1,3 @@
+.card.green { border-left: 5px solid #198754; }  /* Bootstrap zöld */
+.card.yellow { border-left: 5px solid #ffc107; } /* Bootstrap sárga */
+.card.red { border-left: 5px solid #dc3545; }    /* Bootstrap piros */
